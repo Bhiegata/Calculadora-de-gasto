@@ -1,0 +1,123 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fundo da tela*/
+body {
+    /*Fontes*/
+    font-family: sans-serif;
+
+    /*Estilização da imagem*/
+    background-image: URL("imagem.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+/*Texto principal da calculadora*/
+h1{
+    /*cor*/
+    color: darkblue;
+    /*alinhamento de texto*/
+    text-align:center;
+    /*Margem inferior*/
+    margin-bottom: 30px;
+}
+
+/*Quadro principal da calculadora*/
+main {
+    /*borda*/
+    border: 5px solid darkblue;
+    border-radius: 15px;
+    /*Largura*/
+    width: 350px;   
+    /*espassamento e margem*/
+    padding: 50px;
+    margin: 30px auto;
+    /*Cor de fundo*/
+    background-color: rgba(255,255,255,0.85);
+    /*sombreamento*/
+    box-shadow:10px 10px 10px darkblue;
+}
+
+/*Campos para inclusão dos valores e o botão de "adicionar"*/
+input, button{
+    /*Configuração do display, para que cada campo use uma linha*/
+    display: block;
+    /*tamanho: largura e altura*/
+    width: 100%;
+    height: 30px;
+    /*margem*/
+    margin: 20px auto; 
+    /*borda*/
+    border: 2px solid darkblue;
+    /*Cor de fundo e sombreamento*/
+    background-color: rgba(255,255,255,0.85);
+    box-shadow:5px 5px 5px darkblue;
+}
+
+
+/*Características adicionais do botão*/
+button{
+    /*cor de fundo*/
+    background-color: darkblue;
+    /*cor da fonte*/
+    color: rgba(255,255,255,0.85);
+    /*alteração do cursos quando passa o mouse acima*/
+    cursor: pointer;
+}
+
+/*características quando o botão é clicado*/
+button:active{
+    /*Alteração nas cores de fundo e cores de fonte*/
+    background-color: rgba(255,255,255,0.85);
+    color: darkblue;
+}
+
+/*texto: "Digite o valor gasto" no input*/
+input[placeholder]{
+    /*Alinhamento de texto*/
+    text-align: center;
+    /*cor da fonte*/
+    color: darkblue;
+}
+
+/*As categorias selecionaveis para inclusão dos valores*/
+select {
+    /*largura e altura*/
+    width: 100%;
+    height: 30px;
+    /*Alinhamento de texto*/   
+    text-align: center;
+    /*borda*/
+    border: 2px solid darkblue;
+    /*Cor e sombreamento*/
+    background-color: rgba(255,255,255,0.85);
+    box-shadow:5px 5px 5px darkblue;
+
+}
+
+/*textos que aparecem abaixo do botão: "adicionar"*/
+p {
+    /*cor*/
+    color: darkblue;
+    /*Alinhamento de texto*/
+    text-align: center;
+    /*borda e sombreamento*/
+    border: 1px solid darkblue;
+    box-shadow: 5px 5px 5px darkblue;
+    /*espassamento e margem*/
+    margin: 10px;
+    padding: 5px;
+   
+}
+
+/*Texto: "Total"*/
+#total {
+    /*margem*/
+    margin-top: 20px;
+}

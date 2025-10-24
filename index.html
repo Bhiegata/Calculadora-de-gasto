@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!--layout responsivo-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Título da página-->
+        <title>Calculadora de gasto</title>
+        <!--Link para CSS-->
+        <link rel="stylesheet" href="index.css">
+        <!--Link para JS-->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!--Corpo central da caculadora-->
+        <main>
+            <!--Título do app-->
+            <h1>Controle de Gastos</h1>
+            <form>
+                <!--Campo para incluir valores de gasto-->
+                <input id="valor" type="number" placeholder="Digite o valor do gasto" />
+                <!--Opções de categoria para inclusão do gasto-->
+                <select id="categoria">
+                    <option value="Alimentacao">Alimentação</option>
+                    <option value="Transporte">Transportes</option>
+                    <option value="Lazer">Lazer</option>
+                    <option value="Outros">Outros</option>
+                </select>
+                <!--Botão com funcão em JS para armazenar o gasto e 
+                    automaticamente somar-se ao valor total-->
+                <button type="button" onclick="adicionarGasto()">Adicionar</button>
+            </form>
+            <!--Informativos na página com os valores que forem add
+                com valores informados, nas suas respectivas categorias-->
+            <p id="Alimentacao">Alimentação: R$ 0,00</p>
+            <p id="Transporte">Transportes: R$ 0,00</p>
+            <p id="Lazer">Lazer: R$ 0,00</p>
+            <p id="Outros">Outros: R$ 0,00</p>
+            <p id="Total">Total: R$ 0,00</p>
+        </main>
+    </body>
+</html>
